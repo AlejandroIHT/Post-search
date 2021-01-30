@@ -1,0 +1,59 @@
+@import "../globalStyle.css";
+
+.search {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search__input {
+  width: 350px;
+  font-weight: 400;
+  color: var(--dark-blue-color);
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  padding: 16px 22px 16px 17px;
+}
+
+.search__icon {
+  margin-left: 22px;
+}
+
+.tasks__search__container {
+  width: 100%;
+  height: 48px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: var(--dark-blue-color);
+  padding: 0;
+  margin-bottom: 0;
+  border: 1px solid rgba(0, 0, 0, 0.02);
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.search__input:active,
+.search__input:focus {
+  outline: none;
+}
+
+.search__input:focus + label {
+  outline: none;
+  border: 2px solid var(--light-blue-color);
+}
+
+@media (max-width: 576px) {
+  .search {
+    width: 100%;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  #search {
+    width: calc(100% - 39px);
+  }
+}

@@ -1,3 +1,87 @@
 @import '../globalStyle.css';
 
+.Post {
+  width: calc((100% / 3) - 100px);
+  min-width: 267px;
+  max-width: 400px;
+  background-color: var(--white-color);
+  margin: 16px 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 28px 2px #20283d26;
+}
 
+.Post__imgPost {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.Post__container {
+  padding: 20px;
+}
+
+.Post__container--tags {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.Post__container--tags .tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--white-color);
+  background-color: var(--light-blue-color);
+  padding: 4px 8px;
+  margin-right: 8px;
+  border-radius: 50px;
+}
+
+.Post__container--body {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--dark-blue-color);
+  margin-bottom: 24px;
+}
+
+.Post__container--user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user__container {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.user__container img {
+  width: 100%;
+  border-radius: 50px;
+}
+
+.user__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: calc(100% - 50px);
+}
+
+.user__body--name {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--dark-blue-color);
+  margin-bottom: 2px;
+  text-align: left;
+}
+
+.user__body--email {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--dark-blue-color);
+  text-align: left;
+}

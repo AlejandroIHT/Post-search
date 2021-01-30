@@ -1,0 +1,9 @@
+@import '../globalStyle.css';
+
+.Home {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px 10% 50px 10%;
+}

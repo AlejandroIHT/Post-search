@@ -1,0 +1,20 @@
+@import '../globalStyle.css';
+
+.Footer {
+  padding: 24px 40px 64px 40px;
+  border-top: 1px solid rgb(32, 40, 61, .1);
+}
+
+.Footer__title {
+  color: var(--dark-blue-color);
+  font-size: 16px;
+}
+
+.Footer__title i {
+  color: var(--light-blue-color);
+}
+
+.Footer__title__link {
+  color: var(--dark-blue-color);
+  font-weight: 600;
+}

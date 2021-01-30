@@ -1,0 +1,24 @@
+@import '../globalStyle.css';
+
+.Header {
+  width: 60%;
+  margin: auto;
+}
+
+.Header__container {
+  display: flex;
+  justify-content: center;
+  padding: 19px 0;
+}
+
+@media (max-width: 992px) {
+  .Header {
+    width: 80%;
+  }
+}
+
+@media (max-width: 576px) {
+  .Header {
+    width: 100%;
+  }
+}
