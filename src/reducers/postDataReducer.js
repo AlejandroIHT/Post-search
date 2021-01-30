@@ -5,7 +5,9 @@ import {
 } from '../types/postDataTypes';
 
 const INITIAL_STATE = {
-  postData: [],
+  postData: {
+    data: [],
+  },
   loading: false,
   error: null,
 };

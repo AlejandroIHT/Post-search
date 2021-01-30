@@ -7,6 +7,7 @@
   --dark-black: #000000;
   --light-black: #80879c;
   --white-color: #ffffff;
+  --background-color: #f7f8fc;
 }
 
 * {
@@ -16,5 +17,5 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #f7f8fc;
+  background-color: var(--background-color);
 }

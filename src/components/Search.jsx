@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/components/search.css';
 
-const Search = ({ value, handleChange, handleClick }) => (
+const Search = ({ value, handleChange }) => (
   <>
     <div className="search">
       <div className="search__icon">
@@ -9,16 +9,13 @@ const Search = ({ value, handleChange, handleClick }) => (
       </div>
       <input
         id="search"
-        className={`search__input ${false ? 'active' : null}`}
+        className="search__input"
         type="text"
         placeholder="Search tag"
         onChange={handleChange}
         value={value}
       />
-      <label
-        className={`tasks__search__container ${false ? 'active' : null}`}
-        htmlFor="search"
-      />
+      <label className="tasks__search__container" htmlFor="search" />
     </div>
   </>
 );

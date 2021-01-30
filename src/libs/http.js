@@ -1,29 +1,18 @@
 class Http {
   static instance = new Http();
 
-  get = async (url) => {
+  get = async (url, API_ID) => {
     try {
-      let req = await fetch(url);
-      let json = await req.json();
+      const req = await fetch(url, {
+        headers: {
+          'app-id': API_ID,
+        },
+      });
+      const json = await req.json();
 
       return json;
     } catch (error) {
       console.log('Http get method error', error);
-      throw Error(error);
-    }
-  };
-
-  post = async (url, body) => {
-    try {
-      let req = await fetch(url, {
-        method: 'POST',
-        body,
-      });
-      let json = await req.json();
-
-      return json;
-    } catch (error) {
-      console.log('http post method error', error);
       throw Error(error);
     }
   };
