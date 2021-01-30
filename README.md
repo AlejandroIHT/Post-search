@@ -6,7 +6,7 @@ Post-search is create with [React](https://reactjs.org/), [Redux](https://redux.
 
 ## Conciderations
 
-You can't delete post and see details post.
+You can't delete post, create post, and see details post.
 
 ## Instalation
 
