@@ -8,7 +8,7 @@ Post-search is create with [React](https://reactjs.org/), [Redux](https://redux.
 
 You can't delete post, create post, and see details post.
 
-## Instalation
+## Installation
 
 You will need node and npm installed globally on your machine.
 
